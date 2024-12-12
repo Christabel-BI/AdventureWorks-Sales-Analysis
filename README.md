@@ -4,6 +4,13 @@
 
 The AdventureWorks Sales Analysis project serves as a testament to the power of data-driven decision-making. This project leverages the AdventureWorks dataset to perform a deep dive into sales performance, cost analysis, and customer preferences. By utilizing industry-standard tools and techniques, the project provides actionable insights that can drive business strategies. From SQL-based data cleaning to Excel-powered visualization, every step of this project reflects meticulous planning and execution. The resulting dashboard and analysis empower stakeholders with a clear understanding of key performance indicators, cost structures, and optimization opportunities.he project demonstrates skills in data extraction, transformation, analysis, and visualization using tools like SQL Server, Power Query, Power Pivot, and Excel.
 
+### Business Question
+Write SQL queries and create a dashboard in Excel that contains charts showing:
+- What is the Total Sales for each product name ?
+- What is the Total tax amount for each product color ?
+- What is the Total freight for each product name ?
+- What is The sum of proportion of the sum of total product cost for each product name ?
+
 ### Project Workflow
 
 1. Data Extraction and Loading
@@ -98,8 +105,8 @@ Dashboard: Visual representation of key insights.
 - Excel: Pivot tables, data visualization, and dashboard creation.
 
 ### SQL queries used for Exploratory Data Analysis
-SQL```
---Total Sales for each product name
+SQL
+```--Total Sales for each product name
 
 select * from AdventureWork_Sales
 select * from AdventureWorks_Products
