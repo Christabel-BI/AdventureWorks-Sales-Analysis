@@ -6,9 +6,9 @@ The AdventureWorks Sales Analysis project serves as a testament to the power of 
 
 ### Business Question
 Write SQL queries and create a dashboard in Excel that contains charts showing:
-- What is the Total Sales for each product name ?
-- What is the Total tax amount for each product color ?
-- What is the Total freight for each product name ?
+- What is the Total Sales and Average Total Sales for each product name?
+- What is the Total tax amount for each product color?
+- What is the Total freight for each product name?
 - What is The sum of proportion of the sum of total product cost for each product name ?
 
 ### Project Workflow
