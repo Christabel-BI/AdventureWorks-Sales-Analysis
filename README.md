@@ -45,7 +45,7 @@ Performed detailed analysis on:
 - Excel Dashboard: Designed a dynamic and interactive dashboard to visualize key metrics and trends derived from the pivot tables.
 
 ### File Structure
--<a href =<"https://github.com/Christabel-BI/AdventureWorks-Sales-Analysis/blob/main/AdventureWorks%20.xlsx"> < File Downlaod here <a/> 
+- <a href =<"https://github.com/Christabel-BI/AdventureWorks-Sales-Analysis/blob/main/AdventureWorks%20.xlsx">File Downlaod here <a/> 
 AdventureWorks.xlsx: Contains the transformed and analyzed data, pivot tables, and the dashboard.
 
 ProductName_TotalSales: Total sales by product name.
