@@ -97,3 +97,70 @@ Dashboard: Visual representation of key insights.
 
 - Excel: Pivot tables, data visualization, and dashboard creation.
 
+### SQL queries used for Exploratory Data Analysis
+SQL```
+--Total Sales for each product name
+
+select * from AdventureWork_Sales
+select * from AdventureWorks_Products
+
+CREATE VIEW ProductName_TotalSales AS 
+select dbo.AdventureWorks_Products.ProductKey, dbo.AdventureWorks_Products.ProductName,sum(dbo.AdventureWork_Sales.SalesAmount)
+       as TotalSales from dbo.AdventureWorks_Products
+inner join dbo.AdventureWork_Sales on dbo.AdventureWorks_Products.ProductKey = dbo.AdventureWork_Sales.ProductKey
+GROUP BY dbo.AdventureWorks_Products.ProductName,dbo.AdventureWorks_Products.ProductKey
+
+CREATE VIEW ProductColor_TotalTaxAmt AS 
+select dbo.AdventureWorks_Products.ProductKey,dbo.AdventureWorks_Products.ProductColor,sum(dbo.AdventureWork_Sales.TaxAmt)
+       as TotalTaxAmt from dbo.AdventureWorks_Products
+inner join dbo.AdventureWork_Sales on dbo.AdventureWorks_Products.ProductKey = dbo.AdventureWork_Sales.ProductKey
+GROUP BY dbo.AdventureWorks_Products.ProductColor,dbo.AdventureWorks_Products.ProductKey
+
+CREATE VIEW ProductName_TotalFreight AS 
+select dbo.AdventureWorks_Products.ProductKey,dbo.AdventureWorks_Products.ProductName,sum(dbo.AdventureWork_Sales.Freight)
+       as TotalFreight from dbo.AdventureWorks_Products
+inner join dbo.AdventureWork_Sales on dbo.AdventureWorks_Products.ProductKey = dbo.AdventureWork_Sales.ProductKey
+GROUP BY dbo.AdventureWorks_Products.ProductName,dbo.AdventureWorks_Products.ProductKey
+
+
+CREATE VIEW ProductName_Proportional_cost AS 
+WITH ProductCostCTE AS (
+    -- Step 1: Get total cost for each product
+    SELECT 
+        ProductName,ProductKey,
+        SUM(ProductCost) AS TotalProductCost
+    FROM 
+        dbo.AdventureWorks_Products
+    GROUP BY 
+        ProductName,ProductKey
+),
+TotalCostCTE AS (
+    -- Step 2: Calculate the overall total product cost
+    SELECT 
+        SUM(TotalProductCost) AS OverallTotalCost
+    FROM 
+        ProductCostCTE
+)
+-- Step 3 & 4: Calculate the proportion of each product and sum the proportions
+SELECT ProductName,ProductKey,
+    SUM(TotalProductCost / OverallTotalCost) AS SumOfProportions
+FROM 
+    ProductCostCTE, TotalCostCTE 
+	group by ProductName,ProductKey;
+
+	select * from ProductName_Proportional_cost
+
+-- Question 3
+
+select * from dbo.AdventureWorks_Territories
+select * from dbo.AdventureWork_Sales
+
+CREATE VIEW Territories_Sales AS
+select AdventureWorks_Territories.SalesTerritoryKey , AdventureWorks_Territories.Country, 
+		AdventureWorks_Territories.Region , sum(dbo.AdventureWork_Sales.SalesAmount) as TotalSalesAmount, 
+		sum(dbo.AdventureWork_Sales.TaxAmt) as TotalTaxAmt, sum(dbo.AdventureWork_Sales.Freight) as TotalFreight 
+	From dbo.AdventureWorks_Territories 
+join dbo.AdventureWork_Sales on dbo.AdventureWorks_Territories.SalesTerritoryKey = dbo.AdventureWork_Sales.SalesTerritoryKey
+group by AdventureWorks_Territories.SalesTerritoryKey,AdventureWorks_Territories.Country,AdventureWorks_Territories.Region```
+
+
