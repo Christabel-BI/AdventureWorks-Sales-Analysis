@@ -42,7 +42,7 @@ Performed detailed analysis on:
 5. Dashboard Creation
 
 - Excel Dashboard: Designed a dynamic and interactive dashboard to visualize key metrics and trends derived from the pivot tables.
-https://github.com/Christabel-BI/AdventureWorks-Sales-Analysis/blob/main/Analysis%20Dashboard.png
+  "C:\Users\User\Pictures\Screenshots\Dashboard.png"
 
 ### File Structure
 - <a href= "https://github.com/Christabel-BI/AdventureWorks-Sales-Analysis/blob/main/AdventureWorks%20.xlsx">Downlaod here<a/> 
