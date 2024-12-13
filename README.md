@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-The AdventureWorks Sales Analysis project serves as a testament to the power of data-driven decision-making. This project leverages the AdventureWorks dataset to perform a deep dive into sales performance, cost analysis, and customer preferences. By utilizing industry-standard tools and techniques, the project provides actionable insights that can drive business strategies. From SQL-based data cleaning to Excel-powered visualization, every step of this project reflects meticulous planning and execution. The resulting dashboard and analysis empower stakeholders with a clear understanding of key performance indicators, cost structures, and optimization opportunities.he project demonstrates skills in data extraction, transformation, analysis, and visualization using tools like SQL Server, Power Query, Power Pivot, and Excel.
+The AdventureWorks Sales Analysis project showcases how data can guide better business decisions. Using the AdventureWorks dataset, it analyzes sales performance, costs, and customer preferences. The project involves cleaning and exploring data with SQL, analyzing it, and creating visualizations in Excel. It results in a dashboard that highlights key metrics, sales, cost details, and improvement opportunities. Tools like SQL Server, Power Query, Pivot table, and Excel were used, demonstrating skills in data extraction, exploration, transformation, analysis, and visualization.
 
 ### Business Question
 Write SQL queries and create a dashboard in Excel that contains charts showing:
@@ -16,25 +16,19 @@ Write SQL queries and create a dashboard in Excel that contains charts showing:
 1. Data Extraction and Loading
 
 - Database: The AdventureWorks dataset was initially loaded into Microsoft SQL Server.
-
 - Data Exploration: SQL was used to clean and explore the dataset, ensuring data integrity and preparing it for analysis.
 
 2. Data Transformation
 
 - Power Query: Cleaned and transformed the data using Power Query in Excel.
-
 - Data Modeling: Established relationships between tables using foreign keys in Power Pivot to enable a robust data model.
 
 3. Calculations and Aggregations
 
 - DAX Calculations: Created calculated columns and measures using DAX (Data Analysis Expressions) to derive meaningful insights:
-
 - Average Total Sales
-
 - Total Tax Amount
-
 - Total Freight Costs
-
 - Pivot Tables: Used pivot tables to aggregate data and facilitate detailed analysis.
 
 4. Data Analysis and Insights
@@ -42,9 +36,7 @@ Write SQL queries and create a dashboard in Excel that contains charts showing:
 Performed detailed analysis on:
 
 - Product Performance: Identified top-performing products by sales.
-
 - Cost Analysis: Examined freight and tax costs for high-value products.
-
 - Product Diversity: Analyzed product color distribution and proportional costs.
 
 5. Dashboard Creation
