@@ -4,7 +4,7 @@
 
 The AdventureWorks Sales Analysis project showcases how data can guide better business decisions. Using the AdventureWorks dataset, it analyzes sales performance, costs, and customer preferences. The project involves cleaning and exploring data with SQL, analyzing it, and creating visualizations in Excel. It results in a dashboard that highlights key metrics, sales, cost details, and improvement opportunities. Tools like SQL Server, Power Query, Pivot table, and Excel were used, demonstrating skills in data extraction, exploration, transformation, analysis, and visualization.
 
-### Business Question
+###  Questions (KPI's)
 Write SQL queries and create a dashboard in Excel that contains charts showing:
 - What is the Average Total Sales for each product name?
 - What is the Total tax amount for each product color?
@@ -42,7 +42,8 @@ Performed detailed analysis on:
 5. Dashboard Creation
 
 - Excel Dashboard: Designed a dynamic and interactive dashboard to visualize key metrics and trends derived from the pivot tables.
-  "C:\Users\User\Pictures\Screenshots\Dashboard.png"
+  ![Dashboard](https://github.com/user-attachments/assets/844933ac-8d5e-4fa4-8a4e-6807e6c3a0c4)
+
 
 ### File Structure
 - <a href= "https://github.com/Christabel-BI/AdventureWorks-Sales-Analysis/blob/main/AdventureWorks%20.xlsx">Downlaod here<a/> 
