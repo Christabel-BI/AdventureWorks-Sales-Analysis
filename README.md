@@ -6,9 +6,10 @@ The AdventureWorks Sales Analysis project showcases how data can guide better bu
 
 ###  Questions (KPI's)
 Write SQL queries and create a dashboard in Excel that contains charts showing:
-- What is the Average Total Sales for each product name?
-- What is the Total tax amount for each product color?
-- What is the Total freight for each product name?
+- List the Top 10 Average Total Sales for each product name?
+- What is the Total tax amount for each product colour?
+- List the Top 10 Total freight for each product name?
+- What is the quantity of Product sold for each product colour?
 - What is The sum of proportion of the sum of total product cost for each product name ?
 
 ### Project Workflow
