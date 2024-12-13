@@ -39,10 +39,10 @@ Performed detailed analysis on:
 - Cost Analysis: Examined freight and tax costs for high-value products.
 - Product Diversity: Analyzed product color distribution and proportional costs.
 
-5. Dashboard Creation
-
+### Dashboard Creation
 - Excel Dashboard: Designed a dynamic and interactive dashboard to visualize key metrics and trends derived from the pivot tables.
-  ![Dashboard](https://github.com/user-attachments/assets/844933ac-8d5e-4fa4-8a4e-6807e6c3a0c4)
+
+   ![Dashboard](https://github.com/user-attachments/assets/844933ac-8d5e-4fa4-8a4e-6807e6c3a0c4)
 
 
 ### File Structure
